@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Escuchar la grieta</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      background-image: url('assets/imagen-grieta.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    audio {
+      display: none; /* Esto oculta la barra de reproducción */
+    }
+    a {
+      display: block;
+      margin-top: 30px;
+      color: #00ccff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <p>La grieta canta con voces rotas.<br>Cada fisura es un recuerdo que nadie pidió, pero todos tienen.</p>
+    
+    <!-- Audio en loop de 5 repeticiones -->
+    <audio autoplay loop>
+      <source src="assets/grieta.mpeg" type="audio/mp3">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+    <a href="index.html">← Volver al poema</a>
+  </div>
+</body>
+</html>
